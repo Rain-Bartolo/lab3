@@ -269,6 +269,9 @@ textarea {
     body{
         background-color: #a9a9a9;
     }
+    h1{
+        font-size: x-large;
+    }
     h1,p,ol{
         background-color: #dcdcdc;
     }
