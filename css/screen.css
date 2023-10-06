@@ -25,14 +25,19 @@ time, mark, audio, video {
 	vertical-align: baseline;
     /*background-color: #d1d0d6;*/
 }
-body{
+html,body{
     text-align: center;
-    background-color: #dcdcdc  ;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    margin:0;
 }
 h1{
     text-align: center;
-    text-decoration: dashed;
-    text-shadow: #808080  10px 0px 10px;
+    text-shadow: #808080 10px 0px 10px;
     font-size: xx-large;
     font-style: italic;
 }
@@ -42,7 +47,7 @@ p{
 h1,p, ol{
     padding: 15px;
     text-size-adjust: 80%;
-    background-color: #a9a9a9 ;
+    background-color: #a9a9a9;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -84,7 +89,6 @@ table {
 form{
     display: inline-block;
     justify-content: center;
-    margin: 30px;
     width: 45vw;
     box-shadow:15px 15px 10px #696969 ;
     transition: .4s ease-out;
@@ -114,7 +118,13 @@ textarea {
 button,
 input { /* 1 */
   overflow: visible;
-  margin:15px;
+  margin:12px;
+}
+input[type=submit]{
+    padding: 3px 10px;
+    background: #fff;
+    border: 0 none;
+    cursor: pointer;
 }
 
 /**
@@ -265,5 +275,4 @@ textarea {
     form{
         width: 60vw;
     }
-
 } 
