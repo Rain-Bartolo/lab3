@@ -23,7 +23,26 @@ time, mark, audio, video {
 	font: inherit;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	vertical-align: baseline;
-    background-color: #c0c0c0;
+    /*background-color: #d1d0d6;*/
+}
+body{
+    text-align: center;
+    background-color: #dcdcdc  ;
+}
+h1{
+    text-align: center;
+    text-decoration: dashed;
+    text-shadow: #808080  10px 0px 10px;
+    font-size: xx-large;
+    font-style: italic;
+}
+p{
+    text-align: center;
+}
+h1,p, ol{
+    padding: 15px;
+    text-size-adjust: 80%;
+    background-color: #a9a9a9 ;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -62,6 +81,20 @@ table {
  * 2. Remove the margin in Firefox and Safari.
  */
 
+form{
+    display: inline-block;
+    justify-content: center;
+    margin: 30px;
+    width: 45vw;
+    box-shadow:15px 15px 10px #696969 ;
+    transition: .4s ease-out;
+}
+form:hover{
+    transform: scale(1.05);
+}
+label{
+    padding: 10px;
+}
 button,
 input,
 optgroup,
@@ -222,3 +255,15 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+@media (max-width:750px) {
+    body{
+        background-color: #a9a9a9;
+    }
+    h1,p,ol{
+        background-color: #dcdcdc;
+    }
+    form{
+        width: 60vw;
+    }
+
+} 
